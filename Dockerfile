@@ -21,4 +21,4 @@ COPY . .
 EXPOSE 8000
 
 # Comando para iniciar el servidor usando gunicorn
-CMD ["gunicorn", "back-project.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "back_project.wsgi:application", "--bind", "0.0.0.0:8000"]
