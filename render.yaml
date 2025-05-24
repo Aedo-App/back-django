@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: django-backend
+    env: docker
+    plan: free
+    autoDeploy: true
+    branch: main
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
